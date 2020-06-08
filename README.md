@@ -13,3 +13,6 @@ Python program to visualize the results from the Deeplab model (trained on **Cit
 * Change the name of the path to the model and the image you want.
 * Run the program.
 
+## Output example
+![alt text](https://github.com/ibaiGorordo/Deeplab_Cityscapes_inference/blob/master/outputExample.PNG)
+
