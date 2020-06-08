@@ -1,4 +1,4 @@
-# Deeplab Cityscapes inference
+# Deeplab Cityscapes inference (Tensorflow 2)
 Python program to visualize the results from the Deeplab model (trained on **Cityscapes dataset**).
 
 ## Required Python packages
