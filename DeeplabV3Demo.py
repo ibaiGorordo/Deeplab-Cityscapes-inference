@@ -6,6 +6,7 @@ from matplotlib import gridspec
 from matplotlib import pyplot as plt
 import tarfile
 import os
+import time
 
 
 class DeepLabModel(object):
@@ -152,9 +153,11 @@ if __name__ == '__main__':
   original_im = Image.open(img_path)
 
   # inferences DeepLab model
+  start_time = time.time()
   resized_im, seg_map = model.run(original_im)
-
-
+  ellapsed_time = time.time() - start_time
+  print("Ellapsed time: " + str(ellapsed_time) + "s")
+  
   # show inference result
   vis_segmentation(resized_im, seg_map)
 
